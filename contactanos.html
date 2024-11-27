@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Hotel Paraíso</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+<!--
+.Estilo1 {color: #330033}
+.Estilo2 {font-size: 36px}
+-->
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Hotel Paraíso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Servicios</a></li>
+                <li><a href="contactanos.html" class="activo">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+      <section>
+            <h2 align="center" class="Estilo2">¡Contáctanos Hoy Mismo!</h2>
+            <blockquote>
+              <blockquote>
+                <h3 class="Estilo1">En Hotel Paraíso estamos aquí para ayudarte. Ya sea que tengas preguntas, necesites información adicional o quieras hacer una reservación, nuestro equipo está a tu disposición.</h3>
+              </blockquote>
+            </blockquote>
+            <p align="center"><img src="img/pisacina 1.jpeg" width="638" height="389"></p>
+      </section>
+
+        <!-- Información de Contacto -->
+     
+
+        <!-- Formulario de Contacto -->
+        <section>
+          <h3 align="center" class="Estilo2">Formulario de Contacto</h3>
+          <form action="#" method="POST">
+                <!-- Nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <!-- Celular -->
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="10 dígitos" required>
+
+                <!-- Email -->
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                <label for="servicio">Tipo de Servicio:</label>
+                <select id="servicio" name="servicio">
+                  <option value="habitacion">Habitación</option>
+                  <option value="spa">Spa</option>
+                  <option value="gimnasio">Gimnasio</option>
+                  <option value="restaurante">Restaurante</option>
+                </select>
+                <label for="cantidad">
+                <div align="center">Cantidad:<br>
+                  <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+                  <div align="center">Forma de Pago:</div>
+                  <p align="center">
+                    <select id="pago" name="pago">
+                      <option value="tarjeta">Tarjeta</option>
+                      <option value="deposito">Depósito</option>
+                      <option value="oxxo">Pago en Oxxo</option>
+                    </select>
+                  </p>
+            </div>
+                <div align="center"></div>
+                <div align="center"></div>
+            <div align="center">
+                  <button type="submit" class="btn-enviar">Enviar</button>
+                  <button type="reset" class="btn-borrar">Borrar</button>
+              </div>
+            </form>
+        </section>
+
+        <!-- Mapa -->
+      <section>
+          
+          <h3 align="center" class="Estilo2">Encuéntranos Aquí</h3>
+          <h3 align="center" class="Estilo1">Visítanos en nuestra ubicación. Estamos en el corazón de Cancún, cerca de las playas más exclusivas.</h3>
+            <p align="center" class="Estilo1"><a href="https://www.google.com/maps/@21.1174553,-86.9477438,9z?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"><img src="img/mapa.jpg" alt="Mapa de la ubicación del hotel" border="0" class="imagen-contacto"></a></p>
+      </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+      <p>Desarrollado por Marco Antonio Arreola Huacuz y Axel Osorio Cruz</p>
+      <p>&copy; 2024 Hotel Paraíso | Todos los derechos reservados</p>
+    <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p align="justify"><strong>Teléfono:</strong> +52 123 456 7890</p>
+                      <p align="justify"><strong>Correo Electrónico:</strong> info@hotelparaiso.com</p>
+                      <p align="justify"><strong>Dirección:</strong> Av. Playa del Paraíso, 1234, Cancún, Q. Roo, México.</p>
+                      <p align="justify">Estamos disponibles los 7 días de la semana, de 9:00 AM a 9:00 PM</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+      </blockquote>
+    </footer>
+</body>
+</html>
