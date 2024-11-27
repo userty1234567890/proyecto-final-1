@@ -1,0 +1,174 @@
+/* General: Estilo para todo el sitio web */
+body {
+    font-family: 'Arial', sans-serif; /* Tipografía legible y profesional */
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Fondo claro para mantener el enfoque en el contenido */
+    color: #333; /* Texto oscuro para buen contraste */
+}
+
+/* Encabezado */
+header {
+    background-color: #0056a1; /* Azul profundo, transmite confianza y profesionalismo */
+    color: white; /* Contraste alto */
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Aumenta la visibilidad del nombre del sitio */
+}
+
+/* Menú de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Proximidad uniforme */
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Contraste claro sobre el fondo azul */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    background-color: #004080; /* Resalta la página activa */
+    color: #f0f8ff;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+/* Títulos */
+h2, h3 {
+	color: #0056a1; /* Consistencia con el encabezado */
+	border-bottom: 2px solid #ddd; /* Repetición visual */
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	background-color: #FFFFFF;
+}
+
+/* Imágenes */
+.imagen-contacto {
+    max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px; /* Bordes curvados para suavizar el diseño */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega profundidad */
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Proximidad para separar los campos */
+    background-color: #ffffff; /* Fondo limpio para enfoque */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Profundidad sutil */
+    max-width: 600px;
+    margin: 0 auto; /* Centrado */
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus, form select:focus {
+    border-color: #0056a1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 161, 0.5); /* Resalta el campo activo */
+}
+
+form button {
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar {
+    background-color: #0056a1; /* Azul confiable */
+    color: white;
+    border: none;
+}
+
+.btn-enviar:hover {
+    background-color: #004080; /* Oscurece al pasar el cursor */
+}
+
+.btn-borrar {
+    background-color: #ff5733; /* Naranja vibrante para acción secundaria */
+    color: white;
+    border: none;
+}
+
+.btn-borrar:hover {
+    background-color: #cc4526; /* Oscurece al pasar el cursor */
+}
+
+/* Tabla (Página de Servicios) */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	background-color: #FFFFFF;
+}
+
+table td, table th {
+    padding: 10px;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: #f0f8ff; /* Resalta la fila al pasar el cursor */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
+}
